@@ -5,6 +5,7 @@
   "devDependencies": {
     "@types/react": "^16.0.2",
     "@types/react-native": "^0.47.4",
+    "@types/react-navigation": "^1.0.19",
     "jest-expo": "~19.0.0",
     "react-native-cli": "^2.0.1",
     "react-native-scripts": "1.1.0",
@@ -17,7 +18,7 @@
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "ios": "react-native-scripts ios --port 8080",
     "test": "node node_modules/jest/bin/jest.js --watch"
   },
   "jest": {
@@ -25,8 +26,13 @@
   },
   "dependencies": {
     "expo": "^19.0.0",
+    "mobx": "^3.2.2",
+    "mobx-react": "^4.2.2",
+    "npm": "4.6.1",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.46.1",
+    "react-navigation": "^1.0.0-beta.11",
+    "styled-components": "^2.1.2",
     "typescript": "^2.4.2"
   }
 }

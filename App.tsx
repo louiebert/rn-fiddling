@@ -1,17 +1,15 @@
 import * as React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import {AppRegistry, StyleSheet, Text, View} from 'react-native'
 
-export default class App extends React.Component {
+import Navigation from './src/components/Navigation'
+
+class App extends React.Component {
   render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.tsx to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    )
+    return <Navigation />
   }
 }
+
+AppRegistry.registerComponent('Navigation', () => Navigation)
 
 const styles = StyleSheet.create({
   container: {
@@ -21,3 +19,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   }
 })
+
+export default App
