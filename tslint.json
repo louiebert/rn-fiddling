@@ -7,8 +7,15 @@
     "member-access": [false],
     "object-literal-sort-keys": false,
     "jsx-no-lambda": false,
+    "ordered-imports": [
+      true,
+      {
+        "named-imports-order": "case-insensitive",
+        "import-sources-order": "any"
+      }
+    ],
     "quotemark": [true, "single"],
     "semicolon": [true, "never"]
   },
-  "rulesDirectory": []
+  "rulesDirectory": ["./src/types"]
 }
